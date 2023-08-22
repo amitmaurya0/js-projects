@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background: linear-gradient(45deg, rgb(43, 40, 40), rgb(42, 42, 40));
+}
+
+.clock {
+    position: relative;
+    height: 250px;
+    width: 250px;
+}
+
+.circle {
+    height: 100%;
+    width: 100%;
+    border: 8px solid #2c3e50;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #00E3E2, 0 0 10px #00E3E2, 0 0 15px #00E3E2;
+}
+
+.hand {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform-origin: 50% 100%;
+    transform: rotate(90deg);
+}
+
+.hour-hand {
+    width: 5px;
+    height: 30%;
+    background: white;
+    z-index: 3;
+    border-radius: 50px;
+}
+.minute-hand {
+    width: 5px;
+    height: 40%;
+    background: #34495e;
+    z-index: 2;
+    border-radius: 50px;
+}
+.seconds-hand {
+    width: 5px;
+    height: 50%;
+    background: linear-gradient(45deg, #F88E8D, #5B6FE5);
+    z-index: 1;
+    border-radius: 50px;
+}
+
+.number {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    color: #16eb4f;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    top: 52%;
+    left:54%;
+    transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-110px) rotate(calc(-1 * var(--angle)));
+}
+
+
