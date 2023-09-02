@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2C3A47;
+    color: #EAB543;
+}
+
+
+.stopwatch {
+    text-align: center;
+    background-color: #3B3B98;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.time {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    border-bottom: solid 4px #EAB543; 
+    padding-bottom: 40px;   
+}
+
+.actionButtons {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 25px;
+    font-size: 1.1em;
+    margin: 0 10px;
+    border: none;
+    background-color: #1E272E;
+    color: #EAB543;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0A3D62;
+    transform: scale(1.05);
+}
+
+
+button:disabled {
+    background-color: #7f8c8d;
+    cursor: not-allowed;
+}
+
+.laps {
+    list-style-type: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+
+.laps li {
+    border-bottom: 1px dashed #EAB543;
+    padding: 8px 0;
+    font-size: 1.1em;
+}
